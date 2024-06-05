@@ -7,11 +7,12 @@
             <div class="content">
                 <div class="name">
                     {{food.name}}
+                    <span class="favorite {{food.favorite ? '' : 'not' }}">
+                        ❤
+                    </span>
                 </div>
             </div>
-            <span class="favorite {{food.favorite ? '' : 'not' }}">
-                ❤
-            </span>
+           
             <div class="stars">
                 <ngx-star-rating 
                 [rating]="food.stars" 
