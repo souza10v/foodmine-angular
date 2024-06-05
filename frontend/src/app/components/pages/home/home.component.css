@@ -75,7 +75,7 @@ li a img {
 .cook-time {
     font-size: 0.9rem;
     flex: 3;
-    text-align: right;
+    text-align: center;
 }
 
 .price {

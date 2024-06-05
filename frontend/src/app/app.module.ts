@@ -8,6 +8,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { SearchComponent } from './components/partials/search/search.component';
 import { FoodPageComponent } from './components/pages/food-page/food-page.component';
+import { TagsComponent } from './components/partials/tags/tags.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FoodPageComponent } from './components/pages/food-page/food-page.compon
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    FoodPageComponent
+    FoodPageComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,
