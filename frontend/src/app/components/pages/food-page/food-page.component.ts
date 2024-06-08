@@ -12,15 +12,17 @@ import { Food } from 'src/app/shared/models/Food';
 })
 export class FoodPageComponent implements OnInit {
 
-  food!: Food;
+  food: Food = {} as Food;
 
-  constructor(activatedRoute: ActivatedRoute, foodService: FoodService, 
+  constructor(activatedRoute: ActivatedRoute, foodService: FoodService,
     private CartService: CartService, private router: Router) {
     activatedRoute.params.subscribe((params) => {
-      if(params.id)
-        this.food = foodService.getFoodById(params.id)
+      if (params.id)
+        foodService.getFoodById(params.id).subscribe(serverFood => {
+          this.food = serverFood;
+        })
     })
-   }
+  }
 
   ngOnInit(): void {
   }
