@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "d9cc53f6-3959-403f-b0d6-3f486dc97979"
+    "analytics": false
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -30,12 +30,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
+              "aot": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -57,6 +59,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "aot": false,
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
