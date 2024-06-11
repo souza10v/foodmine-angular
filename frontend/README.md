@@ -1,27 +1,68 @@
-# Frontend
+# Foodmine
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+Foodmine é um aplicativo web que lista diversos itens alimentares e inclui a funcionalidade de carrinho de compras. O aplicativo é construído com um servidor backend para gerenciar dados e um frontend para fornecer uma interface amigável ao usuário.
 
-## Development server
+## Tabela de Conteúdos
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias](#tecnologias)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funcionalidades
+- Visualizar uma lista de itens alimentares
+- Adicionar itens ao carrinho de compras
+- Funcionalidade de login de usuário para controle de acesso
+- Interface responsiva e amigável ao usuário
 
-## Code scaffolding
+## Tecnologias
+- **Frontend**: Angular
+- **Backend**: Node.js, TypeScript
+- **Gerenciador de Pacotes**: npm
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Estrutura do Projeto
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Foodmine/
+│
+├── backend/
+│ ├── node_modules/
+│ ├── src/
+│ │ ├── data.ts
+│ │ └── server.ts
+│ ├── .gitignore
+│ ├── package-lock.json
+│ ├── package.json
+│ └── tsconfig.json
+│
+├── frontend/
+│ ├── .angular/
+│ ├── .vscode/
+│ ├── node_modules/
+│ ├── src/
+│ │ ├── app/
+│ │ │ ├── components/
+│ │ │ ├── pages/
+│ │ │ │ ├── cart-page/
+│ │ │ │ ├── food-page/
+│ │ │ │ └── home/
+│ │ │ ├── login-page/
+│ │ │ │ ├── login-page.component.css
+│ │ │ │ ├── login-page.component.html
+│ │ │ │ ├── login-page.component.spec.ts
+│ │ │ │ └── login-page.component.ts
+│ │ │ ├── partials/
+│ │ │ │ ├── header/
+│ │ │ │ │ ├── header.component.css
+│ │ │ │ │ ├── header.component.html
+│ │ │ │ │ ├── header.component.spec.ts
+│ │ │ │ │ └── header.component.ts
+│ │ │ ├── not-found/
+│ │ │ ├── search/
+│ │ │ ├── tags/
+│ │ │ └── title/
+│ │ ├── cart.service.spec.ts
+│ │ └── cart.service.ts
+│
+└── README.md
