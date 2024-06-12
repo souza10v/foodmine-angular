@@ -2,6 +2,7 @@
 
 Foodmine é um aplicativo web que lista diversos itens alimentares e inclui a funcionalidade de carrinho de compras. O aplicativo é construído com um servidor backend para gerenciar dados e um frontend para fornecer uma interface amigável ao usuário.
 
+
 ## Tabela de Conteúdos
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias](#tecnologias)
